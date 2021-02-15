@@ -1,9 +1,7 @@
-.BigText {
-    margin-left: 50px;
+.tableGr {
+    border-collapse: collapse;
 }
 
-.ForImages {
-    width: 20%;
-    padding-left: 40px;
-    padding-right: 40px;
+.cellGR {
+    border: 1px solid black;
 }
