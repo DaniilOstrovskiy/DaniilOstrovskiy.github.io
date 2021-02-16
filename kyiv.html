@@ -4,6 +4,13 @@
 <head>
     <meta charset="utf-8">
     <title>Українські дива</title>
+    <style>
+        @import url(css/table.css);
+        #mainfont{
+            font-size: 30px;
+            font-style: italic;
+        }
+    </style>
 </head>
 <link rel="stylesheet" href="css/styles.css">
 
@@ -31,24 +38,26 @@
     <br>
     <br>
     <h2>Коротка історія</h2>
-    <p>Розташована в басейні середньої течії Дніпра, більшою частиною на Правобережжі. На сході межує з Чернігівською і Полтавською, на південному сході та півдні з Черкаською, на південному заході — з Вінницькою, на заході — з Житомирською областями, на півночі — з Гомельською областю Білорусі. </p>
+    <p id="mainfont">Розташована в басейні середньої течії Дніпра, більшою частиною на Правобережжі. На сході межує з Чернігівською і Полтавською, на південному сході та півдні з Черкаською, на південному заході — з Вінницькою, на заході — з Житомирською областями, на півночі — з Гомельською областю Білорусі. </p>
     <br>
     <form>
-        <h3>Що тебе цікавить</h3>
+        <h3>Що вас цікавить</h3>
         <label>Введіть назву</label>
         <input type="text" name="">
         <br>
         <br>
-        <label>Архітектура</label>
-        <input type="checkbox" name="">
-        <label style="margin-left: 20px">Природа</label>
-        <input type="checkbox" name="">
-        <label style="margin-left: 20px">Історичні пам'ятки</label>
-        <input type="checkbox" name="">
-        <label style="margin-left: 20px">Цікаві місця для відпочинку</label>
-        <input type="checkbox" name="">
-        <label style="margin-left: 20px">Цікаві місця для розваг</label>
-        <input type="checkbox" name="">
+        <ul>
+            <li><label>Архітектура</label>
+                <input type="checkbox" name=""></li>
+            <li><label>Природа</label>
+                <input type="checkbox" name=""></li>
+            <li><label>Історичні пам'ятки</label>
+                <input type="checkbox" name=""></li>
+            <li><label>Цікаві місця для відпочинку</label>
+                <input type="checkbox" name=""></li>
+            <li><label>Цікаві місця для розваг</label>
+                <input type="checkbox" name=""></li>
+        </ul>
     </form>
     <br>
     <br>

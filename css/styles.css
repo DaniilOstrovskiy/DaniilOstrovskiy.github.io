@@ -1,7 +1,8 @@
-.tableGr {
-    border-collapse: collapse;
+body {
+    background-color: #FFFCE6;
 }
 
-.cellGR {
-    border: 1px solid black;
+.textFront{
+	font-style: italic;
 }
+
