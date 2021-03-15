@@ -7,11 +7,32 @@
     <style>
     @import url(css/table.css);
     </style>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet"
+          href="plugin-minified/unite-gallery/unite-gallery.css"
+          type="text/css"/>
+    <link rel="stylesheet"
+          href="plugin-minified/unite-gallery/ug-theme-default.css"
+          type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="plugin-minified/unite-gallery/unitegallery.min.js"></script>
+
+    <script type="text/javascript" src="plugin-minified/unite-gallery/ug-theme-default.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            jQuery(document).ready(function() {
+                jQuery("#gallery").unitegallery();
+            });
+        });
+    </script>
 </head>
-<link rel="stylesheet" href="css/styles.css">
 
 <body>
-<<<<<<< HEAD
 <div class="main-box">
     <table style="width:100%">
         <tr>
@@ -58,7 +79,6 @@
         </tr>
     </table>
 </div>
-=======
     <div class="main-box">
         <table style="width:100%">
             <tr>
@@ -104,8 +124,40 @@
                 </td>
             </tr>
         </table>
+
+
+        <div id="gallery" style="display:none;">
+            <img
+                    alt="Preview Image 1"
+                    src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+                    data-image="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+                    data-description="Preview Image 1 Description"
+            />
+
+            <img
+                    alt="Preview Image 2"
+                    src="https://images.unsplash.com/photo-1544609442-26c059e02c7c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1867&q=80"
+                    data-image="https://images.unsplash.com/photo-1544609442-26c059e02c7c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1867&q=80"
+                    data-description="Preview Image 2 Description"
+            />
+
+            <img
+                    alt="Youtube Video"
+                    data-type="youtube"
+                    data-videoid="7yLxxyzGiko"
+                    data-description="Котята гуляют с цыпленком"
+            />
+
+            <img
+                    alt="Preview Image 3"
+                    src="https://images.unsplash.com/photo-1533485496759-b919144fb6d6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+                    data-image="https://images.unsplash.com/photo-1533485496759-b919144fb6d6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+                    data-description="Preview Image 3 Description"
+            />
+
+        </div>
     </div>
->>>>>>> master
+
 </body>
 
 </html>
