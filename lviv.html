@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
     <script>
         $( function() {
             $( "#datepicker" ).datepicker();
@@ -26,8 +27,61 @@
         } );
     </script>
 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <script src="../plugin-minified/jquery.inline-currency.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.jic').inlineCurrency({
+
+                // The 3 digit ISO code you want to display your currency in
+                "currency": "RUB",
+                "convertTo": "USD, EUR",
+
+                // Thousands and Decimal separators
+                "thousandsSplit": "",
+                "decimalsSplit": ".",
+
+                // Selectors
+                "containerElement": "p",
+                "containerClass": "jic-container",
+                "rateElement": "span",
+                "rateClass": "jic-rate",
+                "currencyElement": "span",
+                "currencyClass": "jic-currency",
+
+                // excludes rateElement and generates exchange rates separated by currencySplit value
+                "currencySplit": false,
+
+                // Debug mode
+                "debug": true
+
+            });
+        });
+    </script>
+    <!--  -->
+    <!--  -->
+    <script>
+        function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('txt').innerHTML =
+                h + ":" + m + ":" + s;
+            var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+            if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+            return i;
+        }
+    </script>
 </head>
-<body>
+<body onload="startTime()">
 
 <div class="lviv-main">
     <p>jQuery UI Datepicker - Default functionality</p>
@@ -102,7 +156,24 @@
         </div>
     </div>
 
+    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+    <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+    <a href="https://www.google.com/" class="fa fa-google margin"></a>
 
+    <div class="elfsight-app-a854cc44-f7fc-405e-8825-300622f55f05"></div>
+
+    <span class="jic"
+          data-jic-value="1"
+          data-jic-currency="usd"
+          data-jic-convert-to="eur, rub">
+    </span>
+<div>
+    Current time: <span id="txt"></span>
+</div>
+<!-- Minfin.com.ua currency informer 275x120 yellow-->
+<div id="minfin-informer-m1Fn-currency">Загружаем <a href="https://minfin.com.ua/currency/" target="_blank">курсы валют</a> от minfin.com.ua</a></div><script>var iframe = '<ifra'+'me width="275" height="120" fram'+'eborder="0" src="https://informer.minfin.com.ua/gen/course/?color=yellow" vspace="0" scrolling="no" hspace="0" allowtransparency="true"style="width:275px;height:120px;ove'+'rflow:hidden;"></iframe>';var cl = 'minfin-informer-m1Fn-currency';document.getElementById(cl).innerHTML = iframe; </script><noscript><img src="https://informer.minfin.com.ua/gen/img.png" width="1" height="1" alt="minfin.com.ua: курсы валют" title="Курс валют" border="0" /></noscript>
+<!-- Minfin.com.ua currency informer 275x120 yellow-->
 </div>
 
 </body>
