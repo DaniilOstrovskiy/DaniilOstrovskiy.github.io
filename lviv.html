@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Українські дива</title>
+    <style>
+        @import url(css/table.css);
+        #mainfont{
+            font-size: 30px;
+            font-style: italic;
+        }
+    
+    </style>
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
     <script>
         $( function() {
             $( "#datepicker" ).datepicker();
         } );
     </script>
-
     <script>
         $( function() {
             $( "#accordion" ).accordion();
         } );
     </script>
-    
     <script>
         $( function() {
             $( "#tabs" ).tabs();
         } );
     </script>
-
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
     <script src="../plugin-minified/jquery.inline-currency.js"></script>
-
     <script>
         $(document).ready(function() {
             $('.jic').inlineCurrency({
@@ -81,100 +85,127 @@
         }
     </script>
 </head>
+
 <body onload="startTime()">
-
-<div class="lviv-main">
-    <p>jQuery UI Datepicker - Default functionality</p>
-    <p>Date: <input type="text" id="datepicker"></p>
-
-
-    <div id="accordion">
-        <h3>Section 1</h3>
-        <div>
-            <p>
-                Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-                ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-                amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-                odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-            </p>
-        </div>
-        <h3>Section 2</h3>
-        <div>
-            <p>
-                Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-                purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-                velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-                suscipit faucibus urna.
-            </p>
-        </div>
-        <h3>Section 3</h3>
-        <div>
-            <p>
-                Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-                Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-                ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-                lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
-            </p>
-            <ul>
-                <li>List item one</li>
-                <li>List item two</li>
-                <li>List item three</li>
-            </ul>
-        </div>
-        <h3>Section 4</h3>
-        <div>
-            <p>
-                Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-                et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-                faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-                mauris vel est.
-            </p>
-            <p>
-                Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                inceptos himenaeos.
-            </p>
-        </div>
-    </div>
-
-
-    <div id="tabs">
+    <table style="width:100%">
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td>
+                            <h1 class="BigText">Львівська область</h1>
+                        </td>
+                        <td><img src="images/lviv/coat.png" width="130" height="130"></td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td>
+                            <form action="index.html">
+                                <label>На головну сторінку:</label>
+                                <input type="submit" name="" style="margin-right: 83px">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Date: <input type="text" id="datepicker"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                Current time: <span id="txt"></span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <h2>Коротка історія</h2>
+    <p id="mainfont">Львів заснував король Данило приблизно у 1231—1235 роках (перша згадка від 1256 року). Близько 1272 року місто стало столицею Королівства Русі (Галицько-Волинського князівства). Невдовзі після смерті князя Юрія II Львів на понад чотири століття опинився під владою Королівства Польського. 1356 року місто отримало маґдебурзьке право; в добу Середньовіччя Львів був важливим торговельним центром. За австрійського панування місто стало осередком українського та польського національного рухів.</p>
+    <br>
+    <form>
+        <h3>Що вас цікавить</h3>
+        <label>Введіть назву</label>
+        <input type="text" name="">
+        <br>
+        <br>
         <ul>
-            <li><a href="#tabs-1">Nunc tincidunt</a></li>
-            <li><a href="#tabs-2">Proin dolor</a></li>
-            <li><a href="#tabs-3">Aenean lacinia</a></li>
+            <li><label>Архітектура</label>
+                <input type="checkbox" name=""></li>
+            <li><label>Природа</label>
+                <input type="checkbox" name=""></li>
+            <li><label>Історичні пам'ятки</label>
+                <input type="checkbox" name=""></li>
+            <li><label>Цікаві місця для відпочинку</label>
+                <input type="checkbox" name=""></li>
+            <li><label>Цікаві місця для розваг</label>
+                <input type="checkbox" name=""></li>
         </ul>
-        <div id="tabs-1">
-            <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+    </form>
+    <br>
+    <br>
+    <div class="lviv-main">
+        <div id="accordion">
+            <h3>Палац Потоцьких</h3>
+            <div>
+                <p>
+                    <img src="images/lviv/palac_pot.jpg" width="400" height="400" style="float: left;">
+                    Цей величний палац було зведено на замовлення відомого військового й політичного діяча Речі Посполитої, одного з найбагатших магнатів свого часу Юзефа Потоцького. Він був спроектований французьким архітектором де Верни, збудований під керівництвом поляка Юліуша Цибульського і є чудовим свідченням європейського класицизму. Масштаб споруди цілком відповідає статусу володаря: загальна площа будови – 3100 метри. Нині в одному з залів палацу реєструють шлюби, а в інших можна насолодитися живописом і скульптурою авторства відомих майстрів. Ціни на відвідування варіюються від 15 гривень – для дітей до 300 гривень – для групи туристів з екскурсією іноземною мовою. Звичайний дорослий квиток коштує 70 грн.
+                </p>
+            </div>
+            <h3>Ратуша</h3>
+            <div>
+                <p>
+                    <img src="images/lviv/town_h.jpg" width="400" height="400" style="float: left;">
+                    Ратуша – це чудове місце для того, щоб оглянути центральну частину міста з висоти. Жоден турист не зможе оминути її поглядом, адже Львівська ратуша розташована на площі Ринок – в епіцентрі туристичного життя. Ратуша – найвища в Україні. Її висота становить 65 метрів, тому з неї добре видно ледь не усе місто. Обов'язково завітайте сюди, щоб насолодитися красивими краєвидами.
+                </p>
+            </div>
         </div>
-        <div id="tabs-2">
-            <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+        <br>
+        <br>
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">Музика, театр і кіно</a></li>
+                <li><a href="#tabs-2">Музеї та картинні галереї</a></li>
+                <li><a href="#tabs-3">Література</a></li>
+            </ul>
+            <div id="tabs-1">
+                <p>1795 року у Львові було відкрито перший в Україні професійний театр. 1842 року відкрито Театр Скарбека, тоді — третій за розмірами в Європі; 1900 року з'явилася Львівська опера — один із найгарніших театрів країни, зображений на двадцятигривневій купюрі. У місті діє 8 професійних театрів: опери та балету, драматичний імені Марії Заньковецької, драматичний імені Леся Курбаса, драматичний імені Лесі Українки, духовний «Воскресіння», естрадних мініатюр «І люди, і ляльки», для дітей та юнацтва та ляльковий, 6 театрів-студій та цирк. Місто є значним осередком театрального життя: щороку тут проходять два театральні фестивалі: «Золотий лев», найбільший театральний фестиваль країни, та «Драбина», фестиваль молодого аматорського театру. Щороку в жовтні у місті проходить театралізований карнавал. На великі свята проводять вуличні вистави на ходулях та вогняні шоу.</p>
+            </div>
+            <div id="tabs-2">
+                <p>Для відвідувачів у місті відкриті двері понад 40 музеїв. Серед них: Львівський історичний музей, другий за розмірами історичний музей України; Національний музей, одна з найвизначніших в Україні скарбниць українського мистецтва, заснована митрополитом Шептицьким; Львівська галерея мистецтв, один з найбагатших музеїв України, у минулому очолюваний відомим мистецтвознавцем Борисом Возницьким; Етнографічний музей, єдиний такого типу в Україні; Національний меморіал «Тюрма на Лонцького», перша в Україні в'язниця-музей. </p>
+            </div>
+            <div id="tabs-3">
+                <p>З давніх-давен Львів був значним літературно-книговидавничим центром регіону. З містом пов'язані імена Івана Франка, Богдана-Ігоря Антонича, Марії Конопницької, Єжи Яницького, Олександри Мариніної, Ванди Василевської, Леопольда фон Захер-Мазоха, Бруно Шульца, Станіслава Лема, Станіслава Єжи Леца, Тадеуша Ріттнера, Надії Мандельштам, Шолом-Алехема, Оноре де Бальзака, «Руської Трійці» «Дванадцятки» та інших.</p>
+            </div>
         </div>
-        <div id="tabs-3">
-            <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-            <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+        <div style="display: flex;">
+            <div>
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+                <a href="https://www.google.com/" class="fa fa-google margin"></a>
+            </div>
+            <div class="elfsight-app-a854cc44-f7fc-405e-8825-300622f55f05"></div>
+            <span class="jic" data-jic-value="1" data-jic-currency="usd" data-jic-convert-to="eur, rub">
+            </span>
+            <!-- Minfin.com.ua currency informer 275x120 yellow-->
+            <div id="minfin-informer-m1Fn-currency">Загружаем <a href="https://minfin.com.ua/currency/" target="_blank">курсы валют</a> от minfin.com.ua</a></div>
+            <script>
+            var iframe = '<ifra' + 'me width="275" height="120" fram' + 'eborder="0" src="https://informer.minfin.com.ua/gen/course/?color=yellow" vspace="0" scrolling="no" hspace="0" allowtransparency="true"style="width:275px;height:120px;ove' + 'rflow:hidden;"></iframe>';
+            var cl = 'minfin-informer-m1Fn-currency';
+            document.getElementById(cl).innerHTML = iframe;
+            </script><noscript><img src="https://informer.minfin.com.ua/gen/img.png" width="1" height="1" alt="minfin.com.ua: курсы валют" title="Курс валют" border="0" /></noscript>
+            <!-- Minfin.com.ua currency informer 275x120 yellow-->
         </div>
     </div>
-
-    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
-    <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
-    <a href="https://www.google.com/" class="fa fa-google margin"></a>
-
-    <div class="elfsight-app-a854cc44-f7fc-405e-8825-300622f55f05"></div>
-
-    <span class="jic"
-          data-jic-value="1"
-          data-jic-currency="usd"
-          data-jic-convert-to="eur, rub">
-    </span>
-<div>
-    Current time: <span id="txt"></span>
-</div>
-<!-- Minfin.com.ua currency informer 275x120 yellow-->
-<div id="minfin-informer-m1Fn-currency">Загружаем <a href="https://minfin.com.ua/currency/" target="_blank">курсы валют</a> от minfin.com.ua</a></div><script>var iframe = '<ifra'+'me width="275" height="120" fram'+'eborder="0" src="https://informer.minfin.com.ua/gen/course/?color=yellow" vspace="0" scrolling="no" hspace="0" allowtransparency="true"style="width:275px;height:120px;ove'+'rflow:hidden;"></iframe>';var cl = 'minfin-informer-m1Fn-currency';document.getElementById(cl).innerHTML = iframe; </script><noscript><img src="https://informer.minfin.com.ua/gen/img.png" width="1" height="1" alt="minfin.com.ua: курсы валют" title="Курс валют" border="0" /></noscript>
-<!-- Minfin.com.ua currency informer 275x120 yellow-->
-</div>
-
 </body>
+
 </html>
